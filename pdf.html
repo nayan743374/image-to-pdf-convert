@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        div
+        {
+            background-color: rgb(178, 194, 194);
+            text-align: center;
+            height: 190px;
+            width: 45%;
+            margin-left: 30%;
+            padding-top: 1%;
+            margin-top: 10%;
+            border: 3px solid black;
+            border-radius: 2%;
+            border-bottom: 2%;
+            
+        }
+        button
+        {
+       background-color: green;  
+       height: 36px;
+       width: 35%;
+       border-radius: 2px;
+       font-size: large;
+       
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        button:hover
+        {
+            background-color: rgb(25, 140, 25);
+        }
+        .design
+        {
+           color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    <h1>Convert Image to PDF</h1>
+
+    <!-- Input to upload an image -->
+    <input type="file" id="imageInput" accept="image/*">
+    <br><br>
+
+    <!-- Button to convert the image to PDF -->
+    <button onclick="convertToPDF()"><a href="">Convert to PDF</a></button>
+</div>
+<marquee behavior="" direction=""><h1 class="design"> <i>DESIGN BY NAYAN NASKAR</i></h1></marquee>
+    <script src="pdf.js"></script>
+</body>
+</html>
